@@ -1,7 +1,7 @@
 version: '2'
 services:
     rygel:
-        image: sameersbn/rygel
+        image: tomsotte/rygel
         restart: always
         network_mode: host
         volumes:

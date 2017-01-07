@@ -1,5 +1,5 @@
 FROM ubuntu:xenial
-MAINTAINER sameer@damagehead.com
+MAINTAINER tomsotte@gmail.com
 LABEL \
     Description="Rygel DLNA/uPNP server docker image" \
 	Vendor="GNOME" \
