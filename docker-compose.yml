@@ -1,0 +1,11 @@
+version: '2'
+services:
+    rygel:
+        image: sameersbn/rygel
+        restart: always
+        network_mode: host
+        volumes:
+            - ./music:/music
+            - ./videos:/videos
+            - ./pictures:/pictures
+            - ./cache:/root/.cache/rygel
