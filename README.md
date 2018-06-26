@@ -1,15 +1,10 @@
 # Rygel DLNA/uPNP server docker image
 
-<p style="text-align:center">
-    <img src="https://wiki.gnome.org/Projects/Rygel?action=AttachFile&do=get&target=Rygel_logo_v1.png" alt="rygel logo" />
-</p>
+![rygel-logo](https://wiki.gnome.org/Projects/Rygel?action=AttachFile&do=get&target=Rygel_logo_v1.png)
 
-Unofficial docker image for Rygel DLNA/uPNP server docker image. Forked from [sameersbn/docker-rygel](https://github.com/sameersbn/docker-rygel), but since he uses his
-own ubuntu docker image, I wanted this to be a more generic image.
+Unofficial docker image for [Rygel DLNA/uPNP](https://wiki.gnome.org/Projects/Rygel/) server docker image. Forked from [sameersbn/docker-rygel](https://github.com/sameersbn/docker-rygel), but since he uses his own ubuntu docker image, I wanted this to be a more generic image.
 
-**What is Rygel?**
-
-There are many DLNA/UPnP devices on the market, such as the Sony Playstation 3, smartphones, Microsoft XBox 360, DLNA speakers, and TVs from Sony and Samsung, with more expected. ([project homepage](https://wiki.gnome.org/Projects/Rygel/))
+There are many DLNA/UPnP devices on the market, such as the Sony Playstation 3, smartphones, Microsoft XBox 360, DLNA speakers, and TVs from Sony and Samsung, with more expected.
 
 ## Table of contents
 

@@ -5,12 +5,14 @@ LABEL \
 	Vendor="GNOME" \
 	Version="latest"
 
-ENV RYGEL_CACHE_DIR=/root/.cache/rygel \
+ENV \
+	RYGEL_CACHE_DIR=/root/.cache/rygel \
 	RYGEL_VIDEOS_DIR=/videos \
 	RYGEL_MUSIC_DIR=/music \
 	RYGEL_PICTURES_DIR=/pictures
 
-RUN apt-get update; \
+RUN \
+	apt-get update; \
 	apt-get upgrade -y; \
 	DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends rygel; \
 	rm -rf /var/lib/apt/lists/*;
