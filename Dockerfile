@@ -1,19 +1,19 @@
-FROM ubuntu:xenial
-MAINTAINER tomsotte@gmail.com
+FROM ubuntu:bionic
+MAINTAINER tommaso.sotte@gmail.com
 LABEL \
-    Description="Rygel DLNA/uPNP server docker image" \
+	Description="Rygel DLNA/uPNP server docker image" \
 	Vendor="GNOME" \
-    Version="latest"
+	Version="latest"
 
 ENV RYGEL_CACHE_DIR=/root/.cache/rygel \
-    RYGEL_VIDEOS_DIR=/videos \
-    RYGEL_MUSIC_DIR=/music \
-    RYGEL_PICTURES_DIR=/pictures
+	RYGEL_VIDEOS_DIR=/videos \
+	RYGEL_MUSIC_DIR=/music \
+	RYGEL_PICTURES_DIR=/pictures
 
 RUN apt-get update; \
-    apt-get upgrade -y; \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends rygel; \
-    rm -rf /var/lib/apt/lists/*;
+	apt-get upgrade -y; \
+	DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends rygel; \
+	rm -rf /var/lib/apt/lists/*;
 
 COPY rygel.conf /root/.config/
 
