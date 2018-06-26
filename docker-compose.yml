@@ -1,11 +1,10 @@
-version: '2'
+version: '3'
+
 services:
-    rygel:
-        image: tomsotte/rygel
-        restart: always
-        network_mode: host
-        volumes:
-            - ./music:/music
-            - ./videos:/videos
-            - ./pictures:/pictures
-            - ./cache:/root/.cache/rygel
+	rygel:
+		image: tomsotte/rygel
+		volumes:
+			- <path-to-music>:/music
+			- <path-to-videos>:/videos
+			- <path-to-pictures>:/pictures
+			- <path-to-cache:/root/.cache/rygel
