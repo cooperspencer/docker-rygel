@@ -1,5 +1,5 @@
-FROM ubuntu:bionic
-MAINTAINER tommaso.sotte@gmail.com
+FROM ubuntu:disco
+MAINTAINER buddyspencer@protonmail.com
 LABEL \
 	Description="Rygel DLNA/uPNP server docker image" \
 	Vendor="GNOME" \
@@ -13,8 +13,7 @@ ENV \
 
 RUN \
 	apt-get update; \
-	apt-get upgrade -y; \
-	DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends rygel; \
+	apt-get install -y --no-install-recommends rygel; \
 	rm -rf /var/lib/apt/lists/*;
 
 COPY rygel.conf /root/.config/
